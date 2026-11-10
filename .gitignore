@@ -1,4 +1,5 @@
-# 只跟踪 math-os/，其余课业文书不进仓库
+# 只跟踪 math-os/ 与仓库说明，其余课业文书不进版本库
 /*
 !/.gitignore
+!/README.md
 !/math-os/

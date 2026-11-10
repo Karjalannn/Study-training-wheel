@@ -1,59 +1,58 @@
 # 资源池（唯一推荐来源）
 
-> **只有 ACTIVE 区能被推荐、被导入 lookatstudy、被排进复习队列。**
-> 不在 ACTIVE 里的链接，一律视为"不存在"——包括我自己之前给你的、看起来很诱人的。
+> **只有 ACTIVE 区能被推荐、被导入、被排进复习。**
+> 不在 ACTIVE 里的链接一律视为"不存在"。
+>
+> 本版（v2，2026-11-10）：**移除学校课程**；只保留微积分 / 线性代数 / 概率论 / 编程基础四门底座；周期从"天"改为"周"。
 
 ---
 
-## 准入 5 条（全满足才能 CANDIDATE → ACTIVE）
+## ACTIVE（4 条，正好四门底座）
 
-1. **完成标志**：写明读到哪章 / 做到哪题 / 跑通哪个实验
-2. **一周可验收**：7 天内能产出一个可检查的东西
-3. **不重叠**：与现有 ACTIVE 功能重叠 < 50%
-4. **有名额**：ACTIVE < 6，且本周 NEW 配额未用
-5. **有替代**：至少 1 个同类资源，防止找不到就停摆
-
-新链接进来，先写进 CANDIDATE，并在"缺哪条"里写明缺第几条。**不许直接进 ACTIVE。**
-
----
-
-## ACTIVE（上限 6，当前 4）
-
-| ID | 资源 | 类型 | 完成标志 | 每周投入 | 状态 |
+| ID | 科目 | 资源 | 从哪拿 | 本周做到哪（完成标志） | 每周 |
 |---|---|---|---|---|---|
-| **A1** | 课内（转专业 / GPA 相关） | 课程 | 平时分 / 期中不掉档 | **3.0 h** | ★ 最高优先 |
-| **A2** | Book of Proof（Richard Hammack） | 教材（免费 PDF） | 第 1–6 章 + 每章前 60% 奇号题 | 2.0 h | 进行中 |
-| **A3** | Python for Data Analysis 3e（Wes McKinney） | 教材（免费在线） | 第 1–4 章 + 3 个数值小实验 | 1.5 h | 未开始 |
-| **A4** | LaTeX + Git（Overleaf + Pro Git 前 3 章） | 工具 | 1 页 PDF + 1 个 repo | 0.5 h | 未开始 |
+| **A1** | 微积分（主线） | Stewart《Calculus: Early Transcendentals》 | 📚 校图书馆 / 正规购买；🔍 检索 `Stewart Calculus Early Transcendentals pdf` | **第 1 章 1.1–1.5 + 每节 5 题** | **2.5 h** |
+| **A2** | 编程基础 | 《Python for Data Analysis》3e（Wes McKinney） | ✅ 免费在线 `https://wesmckinney.com/book/` | 第 1–4 章 + 3 个 numpy 小实验 | 1.5 h |
+| **A3** | 线性代数 | 3Blue1Brown《Essence of Linear Algebra》+ Strang《Introduction to Linear Algebra》前 2 章 | ✅ `https://www.3blue1brown.com/`；书 📚 | 看完 3B1B 前 8 集，能讲清"矩阵 = 线性变换" | 0.5 h |
+| **A4** | 概率论 | Blitzstein & Hwang《Introduction to Probability》第 1–2 章 | 🔍 检索 `Blitzstein Introduction to Probability pdf`（作者主页有免费版） | 组合计数 + 条件概率，独立做 10 道题 | 0.5 h |
 
-**合计 7.0 h/周** —— 与"每晚 1 小时 × 7"刚好打满，**零余量**。这就是必须砍的原因。
+**合计 5.0 h/周。** 这就是"少一点"的具体数额——不是口号。
+
+---
+
+## 为什么是这四门，为什么微积分占一半
+
+微积分是另外三门的**语言**：线代的特征值要解方程，概率的连续分布要用积分，编程的数值方法全是逼近。所以微积分必须是主线，另外三门本周只做"轻触"（各 0.5 h），目的是**先建立词汇表**，不是学会。
+
+概率论的严格版本前置是微积分，所以现在只做第 1–2 章（组合 + 条件概率），这两章不需要积分。
 
 ---
 
 ## CANDIDATE（候读区｜不推荐、不导入、不排期）
 
-| ID | 资源 | 加入 | 缺哪几条 |
+| ID | 资源 | 缺哪几条 | 什么时候可能转正 |
 |---|---|---|---|
-| C1 | Spivak《Calculus》 | 11-10 | 缺 ③④：与 A2 重叠，名额已满 → **W13 寒假第一个转正** |
-| C2 | 剑桥雅思真题（只做 Task 2） | 11-10 | 缺 ④：本学期不排雅思，W13 后启动 |
-| C3 | Axler《Linear Algebra Done Right》 | 11-10 | 缺 ①④：等高代开课再定章节 |
-| C4 | Durrett《Probability: Theory and Examples》 | 11-10 | 缺 ①②：太早，先把 BoP 收尾 |
-| C5 | MIT 18.06 / 3Blue1Brown | 11-10 | 缺 ①：视频没有完成标志，只能当 A2 的补充，不单独占位 |
-| C6 | ISLR / Boyd / Trefethen & Bau | 11-10 | 缺 ①④：方向未定，P2 分流时再议 |
+| C1 | Spivak《Calculus》（证明版微积分） | ③④：与 A1 重叠 | 微积分第 1 章做完后，作为"证明加厚" |
+| C2 | Book of Proof（Hammack） | ④：四门已占满 | W13 寒假，作为"证明语言"第一本 |
+| C3 | Axler《Linear Algebra Done Right》 | ①③：等 Strang 前 2 章做完 | 寒假 |
+| C4 | 剑桥雅思真题 | ④：本学期不排 | W13 |
+| C5 | Durrett《Probability: Theory and Examples》 | ①②：太早 | 大二 |
+| C6 | ISLR / Boyd / Trefethen & Bau | ①④：方向未定 | 大二分流时 |
 
 ---
 
-## REJECTED（明确不做，防止反复纠结）
+## REJECTED（明确不做）
 
 | 资源 / 行为 | 理由 | 日期 |
 |---|---|---|
-| 任何"数学书单 100 本 / 学习路线图合集" | 与 POOL 冲突，只制造焦虑 | 11-10 |
-| 两本以上分析教材并行（Rudin + Apostol + Tao 同时开） | 重叠 >50%，换书不等于进步 | 11-10 |
-| 学期中开新方向（拓扑 / 代数几何 / 微分几何） | R4 精神：先把一门做到 50% | 11-10 |
+| 学校课程内容纳入本系统 | 你的要求：本系统只跑四门底座，课内另管 | 11-10 |
+| 任何"数学书单 100 本" | 与 POOL 冲突 | 11-10 |
+| 同时开两本微积分（Stewart + Spivak） | 重叠 >50% | 11-10 |
+| 学期中开新方向（拓扑 / 微分几何等） | 底座还没打完 | 11-10 |
 
 ---
 
 ## 变更日志
 
-- **2026-11-10 建立**：ACTIVE 4 条，CANDIDATE 6 条，REJECTED 3 条。
-  - 决策变更：原路线图把 Spivak 列为 P0 必读。因本学期改押 **保 GPA/转专业**、时间压到 7 h/周，Spivak 降为 C1（寒假转正）。这是主动减负，不是放弃。
+- **v2（2026-11-10）**：移除课内 3 h；ACTIVE 从 4 条改为微积分/线代/概率/编程；总时长 7 h → **5 h/周**；BoP 从 ACTIVE 移到 C1。
+- v1（2026-11-10）：建立，含课内。

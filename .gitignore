@@ -1,5 +1,4 @@
-# 只跟踪学习系统的两份资产，其余私人文书不进仓库
+# 只跟踪 math-os/，其余课业文书不进仓库
 /*
 !/.gitignore
-!/study/
-!/math-phd-roadmap/
+!/math-os/

@@ -6,7 +6,8 @@
 
 | 路径 | 作用 |
 |---|---|
-| [`math-os/study/RULES.md`](math-os/study/RULES.md) | 监督规则：两套系统分工、每日三数、R1–R6 拒绝规则、每晚 60 分钟结构 |
+| [`math-os/portal.html`](math-os/portal.html) | 桌面入口页：本周任务 + 四个资源链接 + 三条规矩（可离线打开，勾选存 localStorage） |
+| [`math-os/study/RULES.md`](math-os/study/RULES.md) | 监督规则：两套系统分工、周三数、R1–R6 拒绝规则 |
 | [`math-os/study/POOL.md`](math-os/study/POOL.md) | 资源池：ACTIVE / CANDIDATE / REJECTED 三态 + 准入 5 条。唯一推荐来源 |
 | [`math-os/math-phd-roadmap/`](math-os/math-phd-roadmap/) | 长期路线图：方向用途地图、技能包三档、阶段框架（资源部分已被 POOL 取代） |
 

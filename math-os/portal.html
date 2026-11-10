@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>学习入口 · W6</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --line:#252a34; --text:#e6e8ee;
+    --dim:#8b93a3; --accent:#5b8cff; --ok:#3fb950;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
+    padding:32px 24px 64px;}
+  .wrap{max-width:920px;margin:0 auto}
+  h1{font-size:20px;margin:0 0 4px;letter-spacing:.3px}
+  .sub{color:var(--dim);font-size:13px;margin-bottom:28px}
+  h2{font-size:13px;color:var(--dim);font-weight:600;letter-spacing:1px;
+    text-transform:uppercase;margin:32px 0 12px}
+  .task{display:flex;gap:12px;align-items:flex-start;background:var(--panel);
+    border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:8px}
+  .task input{margin-top:4px;width:16px;height:16px;accent-color:var(--ok);cursor:pointer}
+  .task .t{flex:1}
+  .task .t b{font-weight:600}
+  .task .t span{display:block;color:var(--dim);font-size:13px;margin-top:2px}
+  .task .h{color:var(--accent);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .task.done .t b{text-decoration:line-through;color:var(--dim)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+  a.card{display:block;background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;padding:16px;text-decoration:none;color:inherit;
+    transition:border-color .15s,transform .15s}
+  a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  a.card .k{font-size:12px;color:var(--accent);letter-spacing:.5px}
+  a.card .n{font-size:15px;font-weight:600;margin:6px 0 4px}
+  a.card .d{font-size:12.5px;color:var(--dim);line-height:1.5}
+  .rules{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:16px 18px;font-size:13.5px;color:var(--dim);line-height:1.9}
+  .rules b{color:var(--text)}
+  .foot{margin-top:32px;font-size:12px;color:#5c6474}
+  .foot a{color:#5c6474}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>本周 · W6（11/10 – 11/16）</h1>
+  <div class="sub">共 5 小时 · 微积分是主线，其余只建立词汇 · 不要求哪天做</div>
+
+  <h2>本周两件事</h2>
+
+  <div class="task" data-k="w6-calc">
+    <input type="checkbox">
+    <div class="t"><b>微积分 1.1–1.5 + 每节 5 题</b>
+      <span>Stewart《Calculus》· 拆成 2–3 次，每次 45–60 分钟</span></div>
+    <div class="h">2.5 h</div>
+  </div>
+
+  <div class="task" data-k="w6-code">
+    <input type="checkbox">
+    <div class="t"><b>Python 环境 + numpy 三个小实验</b>
+      <span>数组 / 广播 / 画图 · 本周只求跑通，不写项目</span></div>
+    <div class="h">1.5 h</div>
+  </div>
+
+  <div class="task" data-k="w6-linalg">
+    <input type="checkbox">
+    <div class="t"><b>3Blue1Brown 线代前 8 集</b>
+      <span>只看，不做题 · 目标是能讲清"矩阵 = 线性变换"</span></div>
+    <div class="h">0.5 h</div>
+  </div>
+
+  <div class="task" data-k="w6-prob">
+    <input type="checkbox">
+    <div class="t"><b>概率论 1.1–1.2：组合计数</b>
+      <span>Blitzstein 前两节 · 只读概念，寒假再动题</span></div>
+    <div class="h">0.5 h</div>
+  </div>
+
+  <h2>四门底座（只有这四个能点）</h2>
+  <div class="grid">
+    <a class="card" href="https://www.bing.com/search?q=Stewart+Calculus+Early+Transcendentals+pdf" target="_blank" rel="noopener">
+      <div class="k">A1 · 主线</div>
+      <div class="n">微积分 · Stewart</div>
+      <div class="d">Calculus: Early Transcendentals。搜 PDF，或去图书馆借纸质版。</div>
+    </a>
+    <a class="card" href="https://wesmckinney.com/book/" target="_blank" rel="noopener">
+      <div class="k">A2 · 并行</div>
+      <div class="n">编程 · Python 数据分析</div>
+      <div class="d">作者免费在线版。只读第 1–4 章，当手册不要通读。</div>
+    </a>
+    <a class="card" href="https://www.3blue1brown.com/topics/linear-algebra" target="_blank" rel="noopener">
+      <div class="k">A3 · 轻触</div>
+      <div class="n">线性代数 · 3B1B</div>
+      <div class="d">线性代数的本质，前 8 集。建立直觉用，替代不了做题。</div>
+    </a>
+    <a class="card" href="https://www.bing.com/search?q=Blitzstein+Introduction+to+Probability+pdf" target="_blank" rel="noopener">
+      <div class="k">A4 · 轻触</div>
+      <div class="n">概率论 · Blitzstein</div>
+      <div class="d">Introduction to Probability。作者主页有免费版，只读第 1–2 章。</div>
+    </a>
+  </div>
+
+  <h2>三条规矩</h2>
+  <div class="rules">
+    ① <b>只有上面四张卡能用。</b>别的书、别的课、别人推荐的，一律进候读区，我不推荐、你不打开。<br>
+    ② <b>微积分是主线。</b>它没推进，就不讨论线代和概率的新内容。<br>
+    ③ <b>每周日 21:00 复盘一次</b>，报三个数：本周时长 / 微积分到第几节 / 到期复习数。<br>
+    本周没凑够 3 小时 → 下周不加任何新资源，只维持这四条。
+  </div>
+
+  <div class="foot">
+    规则原文：<a href="file:///C:/Users/Derek/Documents/deepseek-harness/default-workspace/math-os/study/RULES.md">RULES.md</a> ·
+    资源池：<a href="file:///C:/Users/Derek/Documents/deepseek-harness/default-workspace/math-os/study/POOL.md">POOL.md</a> ·
+    <a href="https://github.com/Karjalannn/Study-training-wheel" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var week = "w6-2026-11-10";               // 每周改这里，勾选自动归零
+  document.querySelectorAll('.task').forEach(function(el){
+    var key = week + ":" + el.dataset.k;
+    var box = el.querySelector('input');
+    if (localStorage.getItem(key) === '1') { box.checked = true; el.classList.add('done'); }
+    box.addEventListener('change', function(){
+      localStorage.setItem(key, box.checked ? '1' : '0');
+      el.classList.toggle('done', box.checked);
+    });
+  });
+})();
+</script>
+</body>
+</html>

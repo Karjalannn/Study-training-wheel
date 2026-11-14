@@ -43,37 +43,37 @@
 <body>
 <div class="wrap">
 
-  <h1>本周 · W6（11/10 – 11/16）</h1>
-  <div class="sub">共 5 小时 · 微积分是主线，其余只建立词汇 · 不要求哪天做</div>
+  <h1>本周 · W7（11/17 – 11/23）</h1>
+  <div class="sub">共 4.9 小时 + 缓冲 · 微积分是主线，其余只建立词汇 · 不要求哪天做</div>
 
   <h2>本周两件事</h2>
 
   <div class="task" data-k="w6-calc">
     <input type="checkbox">
-    <div class="t"><b>微积分 2.1–2.4：从极限到 ε-δ</b>
-      <span>Ch1 跳过（反函数已会）· 2.3 做 8 题 · 2.4 写 2 个证明 · 2.4 占一半时间</span></div>
-    <div class="h">2.4 h</div>
+    <div class="t"><b>微积分 2.1–2.3 + 2.4 入门</b>
+      <span>2.1–2.3 共 90 分钟，每节 3 题都要动手；2.4 只做"抄例题 + 自己证 1 个"，约 70 分钟</span></div>
+    <div class="h">2.7 h</div>
   </div>
 
   <div class="task" data-k="w6-code">
     <input type="checkbox">
-    <div class="t"><b>Python 环境 + numpy 三个小实验</b>
-      <span>数组 / 广播 / 画图 · 本周只求跑通，不写项目</span></div>
+    <div class="t"><b>Python：读词典 + 跑 2 个实验</b>
+      <span>先读 00_先读我.md（20 min）· exp1 改 n 再跑（30 min）· exp2 看图（20 min）· exp3 下周</span></div>
     <div class="h">1.5 h</div>
   </div>
 
   <div class="task" data-k="w6-linalg">
     <input type="checkbox">
-    <div class="t"><b>3Blue1Brown 线代前 8 集</b>
-      <span>只看，不做题 · 目标是能讲清"矩阵 = 线性变换"</span></div>
-    <div class="h">0.5 h</div>
+    <div class="t"><b>3Blue1Brown 线代 第 1–2 集</b>
+      <span>每集约 13 分钟，两集 25 分钟。全部 15 集约 3 小时，要走 3 周，不是一周</span></div>
+    <div class="h">0.4 h</div>
   </div>
 
   <div class="task" data-k="w6-prob">
     <input type="checkbox">
-    <div class="t"><b>概率论 1.1–1.2：组合计数</b>
-      <span>Blitzstein 前两节 · 只读概念，寒假再动题</span></div>
-    <div class="h">0.5 h</div>
+    <div class="t"><b>概率论 Ch1：为什么概率要公理化</b>
+      <span>Blitzstein 第 1 章，只读不做题。第 2 章（计数）排下周</span></div>
+    <div class="h">0.3 h</div>
   </div>
 
   <h2>四门底座（只有这四个能点）</h2>
@@ -118,7 +118,7 @@
 
 <script>
 (function(){
-  var week = "w6-2026-11-10";               // 每周改这里，勾选自动归零
+  var week = "w7-2026-11-17";               // 每周改这里，勾选自动归零
   document.querySelectorAll('.task').forEach(function(el){
     var key = week + ":" + el.dataset.k;
     var box = el.querySelector('input');

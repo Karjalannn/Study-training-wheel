@@ -13,7 +13,7 @@
 |---|---|---|---|---|---|
 | **A1** | 微积分（主线） | Stewart《Calculus: Early Transcendentals》8e | 📚 已有：`学习资料/数学/微积分/教材/` | **2.1–2.3（90 min，每节 3 题）+ 2.4 入门（抄例题 + 自证 1 个，70 min）** | **2.7 h** |
 | **A2** | 编程基础 | 《Python for Data Analysis》3e（Wes McKinney） | ✅ 免费在线 `https://wesmckinney.com/book/` | 第 1–4 章 + 3 个 numpy 小实验 | 1.5 h |
-| **A3** | 线性代数 | 3Blue1Brown《Essence of Linear Algebra》+ Strang《Introduction to Linear Algebra》前 2 章 | ✅ `https://www.3blue1brown.com/`；书 📚 | 每周 2 集（每集约 13 min；全 15 集约 3 h，走 3 周），能讲清"矩阵 = 线性变换" | 0.4 h |
+| **A3** | 线性代数 | 3Blue1Brown《Essence of Linear Algebra》+ Strang《Introduction to Linear Algebra》前 2 章 | ✅ `https://www.3blue1brown.com/`；书 📚 | 每周 2–3 集（每集约 13 min；全 15 集 ≈ 195 min，正好铺满 W7–W12），能讲清"矩阵 = 线性变换" | 0.4 h |
 | **A4** | 概率论 | Blitzstein & Hwang《Introduction to Probability》 | 📚 已有：`学习资料/数学/概率论/教材/` | 本周只读第 1 章（公理化），不做题；第 2 章计数排下周 | 0.3 h |
 
 **合计 4.9 h/周 + 0.1 h 缓冲。** 这就是"少一点"的具体数额——不是口号。

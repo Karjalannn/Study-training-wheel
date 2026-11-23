@@ -43,7 +43,7 @@
 <body>
 <div class="wrap">
 
-  <h1>本周 · W7（11/16 – 11/22）</h1>
+  <h1>本周 · W8（11/23 – 11/29）</h1>
   <div class="sub">共 4.9 小时 + 缓冲 · 微积分是主线，其余只建立词汇 · 不要求哪天做</div>
 
   <h2>本周两件事</h2>
@@ -104,9 +104,11 @@
   <div class="rules">
     ① <b>只有上面四张卡能用。</b>别的书、别的课、别人推荐的，一律进候读区，我不推荐、你不打开。<br>
     ② <b>微积分是主线。</b>它没推进，就不讨论线代和概率的新内容。<br>
-    ③ <b>每周日 21:00 复盘一次</b>，报三个数：本周时长 / 微积分到第几节 / 到期复习数。<br>
-    本周没凑够 3 小时 → 下周不加任何新资源，只维持这四条。
+    ③ <b>勾选就是记录。</b>不用番茄钟、不用计时、不用填时长；每周日复盘时把下面这行发我即可。
   </div>
+
+  <h2>本周进度（勾完自动更新）</h2>
+  <div class="rules" id="summary" style="color:var(--text);font-size:14.5px;text-align:center">—</div>
 
   <div class="foot">
     规则原文：<a href="file:///C:/Users/Derek/Documents/deepseek-harness/default-workspace/math-os/study/RULES.md">RULES.md</a> ·
@@ -118,7 +120,20 @@
 
 <script>
 (function(){
-  var week = "w7-2026-11-17";               // 每周改这里，勾选自动归零
+  var week = "w8-2026-11-23";               // 每周改这里，勾选自动归零
+  var labels = ["微积分", "编程", "线代", "概率"];
+  var out = document.getElementById("summary");
+
+  function render(){
+    var done = 0, parts = [];
+    document.querySelectorAll('.task').forEach(function(el, i){
+      var on = el.querySelector('input').checked;
+      if (on) done++;
+      parts.push(labels[i] + (on ? " ✓" : " ✗"));
+    });
+    out.textContent = parts.join(" · ") + "　（" + done + "/4）";
+  }
+
   document.querySelectorAll('.task').forEach(function(el){
     var key = week + ":" + el.dataset.k;
     var box = el.querySelector('input');
@@ -126,8 +141,10 @@
     box.addEventListener('change', function(){
       localStorage.setItem(key, box.checked ? '1' : '0');
       el.classList.toggle('done', box.checked);
+      render();
     });
   });
+  render();
 })();
 </script>
 </body>

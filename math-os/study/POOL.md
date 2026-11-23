@@ -11,12 +11,14 @@
 
 | ID | 科目 | 资源 | 从哪拿 | 本周做到哪（完成标志） | 每周 |
 |---|---|---|---|---|---|
-| **A1** | 微积分（主线） | Stewart《Calculus: Early Transcendentals》8e | 📚 已有：`学习资料/数学/微积分/教材/` | **2.1–2.3（90 min，每节 3 题）+ 2.4 入门（抄例题 + 自证 1 个，70 min）** | **2.7 h** |
-| **A2** | 编程基础 | **先语法**：`w7/01_语法起步.py` + `w7/02_自测.py`；《Python for Data Analysis》3e 押后 | ✅ 书免费在线 `https://wesmckinney.com/book/` | 本周：01 改完八处 → 02 打印「全对」；numpy 三个实验推到 W8 | 1.5 h |
+| **A1** | 微积分（主线） | Stewart《Calculus》8e | 📚 已有：`学习资料/数学/微积分/教材/` | **已到第 3 章** → 收尾 Ch3（3.1–3.6 计算为主，可快）；**Ch4.1–4.2 中值定理是下一个不能跳的点** | 2.7 h |
+| **A2** | 编程基础 | **网课为主**：CS50P（哈佛，带作业与自动判分）/ B 站「Python 零基础」/ 菜鸟教程 | ✅ `https://cs50.harvard.edu/python/`<br>✅ `https://www.runoob.com/python3/python3-tutorial.html`<br>✅ `https://docs.python.org/zh-cn/3/tutorial/` | 跟完 CS50P 前 4 讲，或 B 站一门入门课前 8 集 | 1.5 h |
 | **A3** | 线性代数 | 3Blue1Brown《Essence of Linear Algebra》+ Strang《Introduction to Linear Algebra》前 2 章 | ✅ `https://www.3blue1brown.com/`；书 📚 | 每周 2–3 集（每集约 13 min；全 15 集 ≈ 195 min，正好铺满 W7–W12），能讲清"矩阵 = 线性变换" | 0.4 h |
 | **A4** | 概率论 | Blitzstein & Hwang《Introduction to Probability》 | 📚 已有：`学习资料/数学/概率论/教材/` | 本周只读第 1 章（公理化），不做题；第 2 章计数排下周 | 0.3 h |
 
 **合计 4.9 h/周 + 0.1 h 缓冲。** 这就是"少一点"的具体数额——不是口号。
+
+> **2026-11-23 变更**：`练习/w7/` 里我写的两个 `.py` 停用——编程改走网课（用户要求，不要我代写练习）。文件留着，等学 numpy 时再翻。
 
 ---
 
